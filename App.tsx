@@ -27,6 +27,7 @@ export default function App() {
     if (saved) {
       try {
         const parsed = JSON.parse(saved);
+        console.log(1);
         if (parsed.visualThemeId) setVisualThemeId(parsed.visualThemeId);
         if (parsed.mix) setMix(parsed.mix);
         // Note: We do not auto-play globally for UX/Browser policy reasons, 
